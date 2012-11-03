@@ -1,0 +1,8 @@
+body {
+	background: image-url("page-bg.png");
+}
+
+.tagline {
+	font-size: 0.85em;
+	@extend .italic;
+}
