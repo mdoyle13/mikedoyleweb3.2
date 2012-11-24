@@ -1,1 +1,9 @@
-single work
+<%= content_for :title, "Mike Doyle - Development Portfolio - #{@work_item.title}" %>
+
+<div class="row">
+<div class="eight columns">
+	<% @work_item.attachments.each do |p| %>
+	<%= image_tag p.file_url%>
+</div>	
+<% end %>	
+</div>
