@@ -24,6 +24,11 @@ gem 'jquery-rails'
 
 gem 'compass-rails'
 gem 'zurb-foundation'
+gem 'mysql2'
+gem 'carrierwave'
+gem 'nested_form'
+gem 'activeadmin'
+gem 'friendly_id'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

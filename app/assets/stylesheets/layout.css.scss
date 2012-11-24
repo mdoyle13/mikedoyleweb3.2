@@ -1,3 +1,40 @@
 .row {
-	background: #fff;
+	background: rgba(255, 255, 255, 0.8);
+}
+
+.footer .row {
+	background: transparent;
+}
+
+.contain-to-grid {
+	border-bottom: 4px solid $accentColor;
+}
+
+.nav-wrapper {
+	@include box-shadow(rgba(black, 0.3) 0px 3px 10px);
+	position: relative;
+	z-index: 1;
+}
+
+.page-content {
+	background: rgba(255, 255, 255, 1.0);
+	padding-bottom: 30px;
+	margin: 0 auto;
+	max-width:1000px;
+	width:100%;
+}
+
+.footer {
+	margin-bottom: 30px;
+}
+
+.footer-links {
+	padding-top: 20px;
+	text-align: center;
+}
+
+.footer-link {
+	color: #333;
+	display: inline-block;
+	font-size: 2em;
 }

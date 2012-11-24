@@ -1,0 +1,10 @@
+<%= content_for :title, "Mike Doyle - Development Portfolio" %>
+
+<div class="row">
+		<div class="twelve columns">
+			<h2>Portfolio</h2>
+		</div>
+</div>
+<div class="row">
+	<%= render :partial => "work_grid_item", :collection => @work_items %>
+</div>	

@@ -23,28 +23,35 @@
   
   <%= csrf_meta_tags %>
 </head>
-<body>	
-	<div class="contain-to-grid">
-		<nav class="top-bar">
-		  <ul>
-				<li class="name"><h1><%= link_to "Mike Doyle <span class=\"tagline\"> Web Development</span>".html_safe, root_url %></h1></li>
-		    <li class="toggle-topbar"><a href="#"></a></li>
-		  </ul>
-		  <section>
-		    <ul class="right">
-		      <li><a href="#">Portfolio</a></li>
-					<li class="divider">
-				  <li><a href="#">About</a></li>
-					<li class="divider">
-					<li><a href="#">Blog</a></li>
-		    </ul>
-		  </section>
-		</nav>
-	</div>	<!-- end nav -->
+<body>
+		<div class="nav-wrapper contain-to-grid">
+			<nav class="top-bar">
+			  <ul>
+					<li class="name"><h1><%= link_to "Mike Doyle <span class=\"tagline\"> Web Development</span>".html_safe, root_url %></h1></li>
+			    <li class="toggle-topbar"><a href="#"></a></li>
+			  </ul>
+			  <section>
+			    <ul class="right">
+			      <li><a href="<%= works_path %>"><i class="icon-book"></i>Portfolio</a></li>
+						<li class="divider">
+					  <li><a href="#"><i class="icon-info-circle"></i>About</a></li>
+						<li class="divider">
+						<li><a href="#"><i class="icon-mail-1"></i>Contact</a></li>
+			    </ul>
+			  </section>
+			</nav>
+		</div> <!-- end nav -->
+	<section class="page-content">
+  	<%= yield %>
+	</section>
+	<section class="footer">
 		<div class="row">
-			<div class="twelve columns">
-  			<%= yield %>
-		</div>
-	</div>		
+			<div class="two columns centered">
+				<div class="footer-links">
+					<a class="footer-link icon-twitter-bird" href="http://www.twitter.com/sccmiked"></a>
+					<a class="footer-link icon-linkedin" href="http://www.twitter.com/sccmiked"></a>
+				</div>
+		</div>	
+	</section>		
 </body>
 </html>
