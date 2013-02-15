@@ -1,5 +1,7 @@
-<div class="four columns">
-	<h4><%= link_to work_grid_item.title, work_path(work_grid_item) %></h4>
-	<%= link_to (image_tag work_grid_item.featured_thumbnail.url), work_path(work_grid_item) %>
-	<p><%= work_grid_item.description %></p>
+<% item = work_grid_item #keep it dry %>
+<div class="four columns work-grid-item">
+	<!-- <h4><%= link_to item.title, work_path(item) %></h4> -->
+	<%= link_to (image_tag item.featured_thumbnail.url), work_path(item) %>
+	<p><%= item.description %></p>
+	<%= link_to "Learn More &raquo".html_safe, work_path(item), :class => "small button round" %>
 </div>

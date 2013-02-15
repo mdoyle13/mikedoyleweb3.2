@@ -1,31 +1,18 @@
 <%= content_for :title, "Mike Doyle - Web Development" %>
 
 <div class="row">
-	<div class="eight columns">
-		<img src="http://placehold.it/1000x600">
-	</div>	
-	<div class="four columns">
-		<h2 class="italic">I build stuff <br>for the web.</h2>
-		<p>I help designers and creatives bring their visions to life in code. I specialize in Ruby on Rails, Wordpress, HTML5, CSS3 and jQuery. 	</p>
+	<div class="twelve columns home-feature center-text">
+		<h1>I Build Stuff for the World Wide Web.</h1>
+		<p>I work with designers and creatives bring their visions to life on the web using Ruby on Rails, Wordpress, HTML, CSS and Javascript.</p>
 	</div>	
 </div>
 
 <div class="row">
-	<div class="four columns">
-		<h4><a href="#">Eshticken Pizza</a></h4>
-		<p>Mauris nec erat a lacus euismod luctus eu ac orci. In hac habitasse platea dictumst. Vivamus posuere augue sed lacus scelerisque pharetra.</p>
-		<img src="http://placehold.it/350x220">
-	</div>
 	
-	<div class="four columns">
-		<h4><a href="#">Ten26 Design</a></h4>
-		<p>Mauris nec erat a lacus euismod luctus eu ac orci. In hac habitasse platea dictumst. Vivamus posuere augue sed lacus scelerisque pharetra.</p>
-		<img src="http://placehold.it/350x220">
-	</div>
-	
-	<div class="four columns">
-		<h4><a href="#">Redux Interior Design</a></h4>
-		<p>Mauris nec erat a lacus euismod luctus eu ac orci. In hac habitasse platea dictumst. Vivamus posuere augue sed lacus scelerisque pharetra.</p>
-		<img src="http://placehold.it/350x220">
-	</div>
+	<% @featured_work.each do |f| %>
+		<div class="four columns">
+		<%= link_to (image_tag f.featured_thumbnail.url), work_path(f) %>
+		</div>
+	<% end %>
+
 </div>	

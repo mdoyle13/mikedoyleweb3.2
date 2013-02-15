@@ -38,3 +38,21 @@
 	display: inline-block;
 	font-size: 2em;
 }
+
+.home-feature {
+	padding: 100px 0;
+}
+
+.home-feature h1,
+.home-feature p {
+	background: #20a98e;
+	color: #fff;
+	display: inline-block;
+	padding: 7px 10px;
+}
+
+.home-feature {
+	/*background:image-url('home-feature-background.jpg') center top no-repeat;
+	*/
+	/*background-size: cover;*/
+}
