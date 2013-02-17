@@ -1,10 +1,20 @@
 <%= content_for :title, "Mike Doyle - Development Portfolio" %>
-
 <div class="row">
 		<div class="twelve columns">
-			<h2>Portfolio</h2>
+			<% if params[:tag] %>
+				<h2>Work Tagged: <%= params[:tag] %></h2>
+			<% else %>
+				<h2>Work</h2>
+			<% end %>
 		</div>
 </div>
 <div class="row">
+	<ul class="tag-list twelve columns">
+			<h4>Tags:</h4>
+		<% ActsAsTaggableOn::Tag.all.each do |tag| %>
+			<li><%= link_to tag, tag_path(tag.name), :class => "tag" %></li>	
+		<% end %>
+	</ul>
+	<br class="clearfix">
 	<%= render :partial => "work_grid_item", :collection => @work_items %>
 </div>	

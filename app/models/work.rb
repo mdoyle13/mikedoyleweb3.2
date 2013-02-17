@@ -1,11 +1,13 @@
 class Work < ActiveRecord::Base
   extend FriendlyId
   
+  acts_as_taggable
+  
   validates :title, :description, :featured_thumbnail, :presence => true
   
   friendly_id :title, use: :slugged
   
-  attr_accessible :description, :title, :attachments_attributes, :attachments, :slug, :featured_thumbnail
+  attr_accessible :description, :title, :attachments_attributes, :attachments, :slug, :featured_thumbnail, :project_url, :tag_list
   
   has_many :attachments, :as => :attachable, :dependent => :destroy
 

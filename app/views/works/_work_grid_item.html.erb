@@ -1,7 +1,11 @@
 <% item = work_grid_item #keep it dry %>
 <div class="four columns work-grid-item">
 	<!-- <h4><%= link_to item.title, work_path(item) %></h4> -->
+	<a href="<%= work_path(item) %>">
+		<div class="overlay">
+			VIEW
+		</div>
+	</a>	
 	<%= link_to (image_tag item.featured_thumbnail.url), work_path(item) %>
-	<p><%= item.description %></p>
-	<%= link_to "Learn More &raquo".html_safe, work_path(item), :class => "small button round" %>
+	<!-- <%= link_to "Learn More &raquo".html_safe, work_path(item), :class => "small button round" %> -->
 </div>

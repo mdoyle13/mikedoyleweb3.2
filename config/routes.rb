@@ -9,6 +9,7 @@ Mikedoyleweb32::Application.routes.draw do
   
   resources :works, :path => "work"
   
+  get "/work/tags/:tag", :to => "works#index", :as => :tag  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

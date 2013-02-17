@@ -1,6 +1,10 @@
 class WorksController < ApplicationController
   def index
-    @work_items = Work.all
+    if params[:tag]
+      @work_items = Work.tagged_with(params[:tag])
+    else  
+      @work_items = Work.all
+    end
   end
   
   def show

@@ -1,5 +1,5 @@
 .row {
-	background: rgba(255, 255, 255, 0.8);
+	/*background: rgba(255, 255, 255, 0.8);*/
 }
 
 .footer .row {
@@ -7,7 +7,7 @@
 }
 
 .contain-to-grid {
-	border-bottom: 4px solid $accentColor;
+	border-bottom: 4px solid $accent-color;
 }
 
 .nav-wrapper {
@@ -17,7 +17,7 @@
 }
 
 .page-content {
-	background: rgba(255, 255, 255, 1.0);
+	/*background: rgba(255, 255, 255, 1.0);*/
 	padding-bottom: 30px;
 	margin: 0 auto;
 	max-width:1000px;
@@ -40,12 +40,12 @@
 }
 
 .home-feature {
-	padding: 100px 0;
+	padding: 120px 0 120px 0;
 }
 
 .home-feature h1,
 .home-feature p {
-	background: #20a98e;
+	background: $accent-color;
 	color: #fff;
 	display: inline-block;
 	padding: 7px 10px;
