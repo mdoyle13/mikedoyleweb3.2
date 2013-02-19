@@ -9,7 +9,6 @@
 	text-align: center;
 }
 
-
 /*LAYOUT MODULES*/
 
 
@@ -38,6 +37,11 @@
 	text-decoration: none;
 }
 
+.tag--no-hover:hover {
+  background: $accent-color;
+  transition: none;
+}
+
 .overlay {
 	background: #000;
 	color: #fff;
@@ -50,4 +54,6 @@
 	top: 40%;
 	width: 30%;
 }
+
+
 

@@ -1,0 +1,36 @@
+<div class="row contact-form">
+	<div class="twelve columns errors-wrapper">
+		<% @contact.errors.full_messages.each do |e| %>
+		<p class="error-message"><%= e %></p>
+		<% end %>
+	</div>
+</div>
+<div class="row">
+	<div class="twelve columns">
+		<%= form_for @contact do |f| %>
+			<div class="row">
+				<div class="six columns">
+					<%= f.label :name %>
+					<%= f.text_field :name %>
+				</div>
+				<div class="six columns">
+					<%= f.label :email %>
+					<%= f.text_field :email %>
+				</div>
+			</div>
+			<div class="row">
+				<div class="twelve columns">
+						<%= f.label :subject %>
+						<%= f.text_field :subject %>
+				</div>	
+			</div>
+			<div class="row">
+				<div class="twelve columns">
+						<%= f.label :message %>
+						<%= f.text_area :message %>
+						<%= f.submit %>
+				</div>			
+			</div>
+		<% end %>
+	</div>
+</div>	

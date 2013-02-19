@@ -11,4 +11,6 @@ a {
 	color: $accent-color;
 }
 
-
+a:hover {
+  color: inherit;
+}
