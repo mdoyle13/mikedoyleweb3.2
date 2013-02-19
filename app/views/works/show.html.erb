@@ -10,8 +10,13 @@
 <div class="row push-down-20">
 
 <div class="eight columns">
-	<% @work_item.attachments.each do |p| %>
-	<%= image_tag p.file_url%>
+	<div id="work-slider" class="flexslider">	
+		<ul class="slides">
+		<% @work_item.attachments.each do |p| %>
+				<li><%= image_tag p.file_url%></li>
+		<% end %>
+		</ul>
+	</div>
 </div>
 <div class="four columns">
 	<ul class="tag-list">
@@ -23,5 +28,4 @@
 	<p class="clearfix"><%= @work_item.description %></p>	
 	<%= link_to "View Project &raquo;".html_safe, "#{@work_item.project_url}", :target => "_blank" %>
 </div>		
-<% end %>	
 </div> <!-- end row -->
