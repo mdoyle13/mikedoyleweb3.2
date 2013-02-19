@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.8'
+gem 'rails', '3.2.12'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -26,7 +26,6 @@ gem 'compass-rails'
 gem 'zurb-foundation'
 gem 'mysql2'
 gem 'carrierwave'
-gem 'nested_form'
 gem 'activeadmin'
 gem 'friendly_id'
 gem 'acts-as-taggable-on'
