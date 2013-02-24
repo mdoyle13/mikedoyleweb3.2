@@ -247,3 +247,7 @@ $topBarBtmMargin: 50px;
   .slider-nav span { @include opacity(0); @include single-transition(opacity, 400ms); }
   &:hover .slider-nav span { @include opacity(1); }
 }*/
+
+.row .mobile-two:last-child {
+	float: left;
+}

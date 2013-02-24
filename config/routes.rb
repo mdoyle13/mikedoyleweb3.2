@@ -7,13 +7,13 @@ Mikedoyleweb32::Application.routes.draw do
   
   root :to => "pages#home"
   
-  resource :works, :path => "work"
+  resources :works, :path => "work"
   
   get "/work/tags/:tag", :to => "works#index", :as => :tag  
   
   match "/about", :to => "pages#about"
   
-  resource :contacts
+  resources :contacts
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

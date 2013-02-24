@@ -24,7 +24,7 @@
 	color: #fff;
 	display: block;
 	float: left;
-	font-size: 18px;
+	font-size: 1.125em;
 	margin: 0 10px 10px 0;
 	padding: 5px;
 	text-transform: uppercase;
@@ -42,6 +42,9 @@
   transition: none;
 }
 
+
+/*OVERLAY ON HOVER*/
+
 .overlay {
 	background: #000;
 	color: #fff;
@@ -55,5 +58,11 @@
 	width: 30%;
 }
 
-
+.submit-button {
+	@extend .tag;
+	border: 0;
+	cursor: pointer;
+	font-family: 'Open Sans';
+	font-weight: 100;
+}
 

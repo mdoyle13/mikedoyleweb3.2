@@ -1,1 +1,13 @@
-create!
+<div class="row contact-form">
+	<div class="twelve columns errors-wrapper">
+		<% @contact.errors.full_messages.each do |e| %>
+		<p class="error-message"><%= e %></p>
+		<% end %>
+	</div>
+</div>
+<div class="row">
+	<div class="twelve columns">
+		<h1>You Just Dropped Me a Line</h1>
+		<p>Thanks for contacting me. I'll be in touch as soon as possible.</p>
+	</div>
+</div>

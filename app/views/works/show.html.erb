@@ -19,12 +19,14 @@
 	</div>
 </div>
 <div class="four columns">
+	<h3 class="no-margin-top">Tags</h3>
 	<ul class="tag-list">
 		<% @work_item.tag_list.each do |tag| %>	
 			<!-- <li><a href="{tag_path(tag)}" class="tag"><%= tag %></a></li> -->
 			<li><%= link_to tag, tag_path(tag), :class => "tag" %></li>
 		<% end %>	
-	</ul>	
+	</ul>
+	<h3>About</h3>	
 	<p class="clearfix"><%= @work_item.description %></p>	
 	<%= link_to "View Project &raquo;".html_safe, "#{@work_item.project_url}", :target => "_blank" %>
 </div>		

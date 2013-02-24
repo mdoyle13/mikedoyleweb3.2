@@ -1,16 +1,26 @@
 <%= content_for :title, "Mike Doyle - Web Development" %>
 
 <div class="row">
-	<div class="twelve columns home-feature center-text">
+	<div class="twelve columns home-feature">
 		<h1>I build stuff for the World Wide Web.</h1>
 		<p>I work with designers and creatives to bring their visions to life on the web using Ruby on Rails, Wordpress, HTML, CSS and Javascript.</p>
 	</div>	
 </div>
 
 <div class="row">
-	
+	<div class="twelve columns">
+		<h3>Recent Projects</h3>
+	</div>
+</div>	
+
+<div class="row">
 	<% @featured_work.each do |f| %>
-		<div class="four columns">
+		<div class="four columns featured-work-thumb work-grid-item">
+			<a href="<%= work_path(f) %>">
+				<div class="overlay">
+					VIEW
+				</div>
+			</a>
 		<%= link_to (image_tag f.featured_thumbnail.url), work_path(f) %>
 		</div>
 	<% end %>
