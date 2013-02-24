@@ -13,7 +13,7 @@ Mikedoyleweb32::Application.routes.draw do
   
   match "/about", :to => "pages#about"
   
-  resources :contacts
+  resources :contacts, :path => "contact"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
