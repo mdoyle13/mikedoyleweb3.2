@@ -1,4 +1,5 @@
 .home-feature {
+	background: $accent-color;
 	padding: 60px 15px 40px 15px;
 }
 
@@ -6,8 +7,6 @@
 .home-feature p {
 	background: $accent-color;
 	color: #fff;
-	display: inline-block;
 	padding: 7px 10px;
-	float: left;
-	width: auto;
+	text-align: center;
 }
