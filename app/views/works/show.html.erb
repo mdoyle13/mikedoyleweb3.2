@@ -26,8 +26,8 @@
 			<li><%= link_to tag, tag_path(tag), :class => "tag" %></li>
 		<% end %>	
 	</ul>
-	<h3>About</h3>	
-	<p class="clearfix"><%= @work_item.description %></p>	
+	<!-- <h3>About</h3>	
+		<p class="clearfix"><%= @work_item.description %></p>	 -->
 	<%= link_to "View Project &raquo;".html_safe, "#{@work_item.project_url}", :target => "_blank" %>
 </div>		
 </div> <!-- end row -->

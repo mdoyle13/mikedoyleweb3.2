@@ -3,7 +3,7 @@ class Work < ActiveRecord::Base
   
   acts_as_taggable
   
-  validates :title, :description, :featured_thumbnail, :presence => true
+  validates :title, :featured_thumbnail, :presence => true
   
   friendly_id :title, use: :slugged
   
