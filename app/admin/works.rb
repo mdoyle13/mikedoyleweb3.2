@@ -1,8 +1,8 @@
 ActiveAdmin.register Work do
   
   controller do
-    #@work = Work.new
-    #@new_attachment = @work.attachments.build
+    @work = Work.new
+    @new_attachment = @work.attachments.build
   end
   
   form do |f|
