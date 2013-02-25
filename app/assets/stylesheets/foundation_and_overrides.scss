@@ -251,3 +251,7 @@ $topBarBtmMargin: 50px;
 .row .mobile-two:last-child {
 	float: left;
 }
+
+[class*="column"]+[class*="column"]:last-child {
+	float: left;
+}
