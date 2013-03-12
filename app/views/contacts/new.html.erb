@@ -1,12 +1,8 @@
-<div class="row contact-form">
-	<div class="twelve columns errors-wrapper">
+<div class="row">
+	<div class="twelve columns">
 		<% @contact.errors.full_messages.each do |e| %>
 		<p class="error-message"><%= e %></p>
 		<% end %>
-	</div>
-</div>
-<div class="row">
-	<div class="twelve columns">
 		<h1>Drop me a line</h1>
 		<%= form_for @contact do |f| %>
 			<div class="row">
