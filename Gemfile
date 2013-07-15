@@ -5,9 +5,6 @@ gem 'rails', '3.2.12'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
-
-
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -25,7 +22,7 @@ gem 'jquery-rails'
 
 gem 'compass-rails'
 gem 'zurb-foundation'
-gem 'mysql2'
+gem 'pg'
 gem 'carrierwave'
 gem 'activeadmin'
 gem 'friendly_id'
