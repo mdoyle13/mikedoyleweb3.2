@@ -11,6 +11,14 @@ development:
   password: 
   database: mikedoyleweb3_2
 
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  username: mdoyle13
+  password: 
+  database: mikedoyleweb3_2
+
 # development:
 #   adapter: sqlite3
 #   database: db/development.sqlite3

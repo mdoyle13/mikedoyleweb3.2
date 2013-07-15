@@ -14,14 +14,12 @@ group :assets do
   gem 'therubyracer', :platforms => :ruby
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
-
+  gem 'zurb-foundation', '~> 3.2.4'
   gem 'uglifier', '>= 1.0.3'
+  gem 'compass-rails'
 end
 
 gem 'jquery-rails', '~> 2.3.0'
-
-gem 'compass-rails'
-gem 'zurb-foundation'
 gem 'pg'
 gem 'carrierwave'
 gem 'activeadmin'
