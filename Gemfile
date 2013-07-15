@@ -25,7 +25,7 @@ gem 'jquery-rails'
 
 gem 'compass-rails'
 gem 'zurb-foundation'
-gem 'mysql2'
+gem 'pg'
 gem 'carrierwave'
 gem 'activeadmin'
 gem 'friendly_id'

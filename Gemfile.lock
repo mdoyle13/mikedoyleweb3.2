@@ -113,8 +113,8 @@ GEM
       compass (>= 0.11.5)
       sassy-math (>= 1.2)
     multi_json (1.6.1)
-    mysql2 (0.3.11)
     orm_adapter (0.4.0)
+    pg (0.15.1)
     polyamorous (0.5.0)
       activerecord (~> 3.0)
     polyglot (0.3.3)
@@ -193,7 +193,7 @@ DEPENDENCIES
   execjs
   friendly_id
   jquery-rails
-  mysql2
+  pg
   rails (= 3.2.12)
   sass-rails (~> 3.2.3)
   sqlite3
