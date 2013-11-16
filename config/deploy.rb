@@ -34,5 +34,5 @@ namespace :deploy do
      run "ln -nfs #{shared_path}/uploads  #{release_path}/public/uploads"
    end
 end
+
 before 'bundle:install', 'deploy:symlink_shared'
-after 'deploy:update_code'
