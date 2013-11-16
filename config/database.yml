@@ -7,7 +7,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  username: mdoyle13
+  username: 461digital
   password: 
   database: mikedoyleweb3_2
 

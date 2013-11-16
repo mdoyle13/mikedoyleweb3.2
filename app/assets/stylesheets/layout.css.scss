@@ -24,8 +24,21 @@
 	width:100%;
 }
 
+.content-pull-up {
+  background: #fff;
+  margin-top: -30px;
+	@include box-shadow(rgba(black, 0.2) 0px 3px 10px);
+}
+
 .footer {
+  background: #b3b3b1;
 	margin-bottom: 30px;
+  color: #fff;
+  a {
+    &:hover {
+      text-decoration:underline;
+    }
+  }
 }
 
 .footer-links {
@@ -34,7 +47,7 @@
 }
 
 .footer-link {
-	color: #333;
+	color: #fff;
 	display: inline-block;
 	font-size: 2em;
 }
