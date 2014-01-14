@@ -36,7 +36,7 @@
   color: #fff;
   a {
     &:hover {
-      text-decoration:underline;
+      text-decoration:none;
     }
   }
 }
@@ -54,4 +54,5 @@
 
 .footer-link:hover {
 	color: $accent-color;
+  
 }
