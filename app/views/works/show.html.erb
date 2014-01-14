@@ -29,7 +29,7 @@
 	<% unless @work_item.description.blank? %>
 		<h3>About</h3>	
 			<p class="clearfix"><%= @work_item.description %></p>	
-			<%= link_to "View Project &raquo;".html_safe, "#{@work_item.project_url}", :target => "_blank" %>
+			<%= link_to "View Project &raquo;".html_safe, "#{@work_item.project_url}", :target => "_blank" unless @work_item.project_url.blank? %>
 		<% end %>	
 </div>		
 </div> <!-- end row -->
