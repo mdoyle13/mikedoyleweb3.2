@@ -19,17 +19,17 @@
 	</div>
 </div>
 <div class="four columns mobile-four">
-	<h3 class="no-margin-top">Tags</h3>
+	<% unless @work_item.description.blank? %>
+		<h3 class="no-margin-top">About</h3>	
+			<p class="clearfix"><%= @work_item.description.html_safe %></p>	
+			<%= link_to "View Project &raquo;".html_safe, "#{@work_item.project_url}", :target => "_blank" unless @work_item.project_url.blank? %>
+		<% end %>
+	<h3>Tags</h3>
 	<ul class="tag-list">
 		<% @work_item.tag_list.each do |tag| %>	
 			<!-- <li><a href="{tag_path(tag)}" class="tag"><%= tag %></a></li> -->
 			<li><%= link_to tag, tag_path(tag), :class => "tag" %></li>
 		<% end %>	
-	</ul>
-	<% unless @work_item.description.blank? %>
-		<h3>About</h3>	
-			<p class="clearfix"><%= @work_item.description %></p>	
-			<%= link_to "View Project &raquo;".html_safe, "#{@work_item.project_url}", :target => "_blank" unless @work_item.project_url.blank? %>
-		<% end %>	
+	</ul>		
 </div>		
 </div> <!-- end row -->
