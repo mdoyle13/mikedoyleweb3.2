@@ -25,7 +25,6 @@ group :assets do
 end
 
 gem 'jquery-rails', '~> 2.3.0'
-gem 'pg'
 gem 'mysql2'
 gem 'carrierwave'
 gem 'activeadmin'
